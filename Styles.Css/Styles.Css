@@ -1,0 +1,472 @@
+@import'Fonts.Css';
+
+
+/* =======================================================================SETTING START====================================================================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--f400);
+    box-sizing: border-box;
+}
+
+:root {
+    --f100: 'Montserrat Thin';
+    --f300: 'Montserrat Light';
+    --f400: 'Montserrat Regular';
+    --f700: 'Montserrat Bold';
+    --f900: 'Montserrat-Black';
+    --bg_white: #ffffff;
+    --logo_bg: #ffffff;
+    --color: #68bf3b;
+    --skindka: #68cd16;
+    --text-light: #ffffff;
+    --text-dark: #bdbdbd;
+    --opacity: rgba(104, 205, 22, 0.20);
+    --col-1: calc(100%/12*1);
+    --col-2: calc(100%/12*2);
+    --col-3: calc(100%/12*3);
+    --col-4: calc(100%/12*4);
+    --col-5: calc(100%/12*5);
+    --col-6: calc(100%/12*6);
+    --col-7: calc(100%/12*7);
+    --col-8: calc(100%/12*8);
+    --col-9: calc(100%/12*9);
+    --col-10: calc(100%/12*10);
+    --col-11: calc(100%/12*11);
+    --col-12: calc(100%/12*12);
+}
+
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-colum {
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.col-4 {
+    width: var(--col-4);
+    padding: 0 15px;
+}
+
+.col-8 {
+    width: var(--col-8);
+    padding: 0 15px;
+}
+
+
+/* =======================================================================SETTINGS end====================================================================================*/
+
+/* ======================================================================= HEADER start====================================================================================*/
+
+
+.cont {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    background: url(../Image/header_bg.png) 50% 50% / cover;
+    height: 768px;
+}
+
+nav {
+    width: var(--col-12);
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    color: white;
+    font-family: var(--f700);
+    font-size: 24px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    font-family: var(--f400);
+    font-size: 16px;
+    background-color: var(--color);
+    padding: 21px 27px 17px 26px;
+    border-radius: 25px;
+    margin-left: 50px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+
+
+nav p {
+    color: white;
+    font-family: var(--f400);
+    font-size: 24px;
+}
+
+.header-cont p {
+    font-family: var(--f900);
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-family: var(--f900);
+    font-size: 72px;
+    color: white;
+    text-transform: uppercase;
+    margin: 30px 0 40px;
+}
+
+
+
+header p:nth-child(3) {
+    font-family: var(--f900);
+    font-size: 18px;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+
+header span {
+    font-family: var(--f400);
+    font-size: 16px;
+    background: linear-gradient(to bottom, #3d8601, #6ad017);
+    border-radius: 25px;
+    color: white;
+    display: inline-block;
+    padding: 18px 44px 20px 43px;
+}
+
+header .cont {
+    height: 100%;
+}
+
+header .header-cont {
+    height: 100%;
+}
+
+/* ======================================================================= END start====================================================================================*/
+
+
+/* ======================================================================= MAIN start====================================================================================*/
+
+
+main {
+    padding: 82px 0 82px 0;
+}
+
+.main-text h3 {
+    font-family: var(--f700);
+    font-size: 30px;
+    color: var(--text-dark);
+    padding: 30px 0 30px;
+}
+
+.main-text p {
+    font-family: var(--f400);
+    font-style: 14px;
+    color: var(--text-dark);
+    line-height: 24px;
+}
+
+.testimonals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-wrapper {
+    width: 350px;
+    height: 460px;
+}
+
+main .bootem p {
+    font-family: var(--f700);
+    font-size: 24px;
+    color: var(--text-dark);
+    padding-right: 62px;
+}
+
+
+
+.col-4 span {
+    font-family: var(--f700);
+    font-size: 30px;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.col-4 a {
+    font-family: var(--f400);
+    font-size: 16px;
+    color: var(--text-light);
+    background: linear-gradient(to bottom, #3d8601, #6ad017);
+    height: 50px;
+    padding: 18px 30px;
+    border-radius: 25px;
+}
+
+.main-img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+main .text h2 {
+    font-family: var(--f700);
+    font-size: 36px;
+    color: var(--color);
+    margin-bottom: 50px;
+}
+
+main h2 {
+    font-family: var(--f700);
+    font-size: 36px;
+    color: var(--opacity);
+    margin-bottom: 50px;
+
+}
+
+
+.main-img span {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: var(--skindka);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px 7px;
+    height: 60px;
+    width: 60px;
+    color: var(--bg_white);
+    font-size: 18px;
+    font-family: var(--f700);
+}
+
+.text p {
+    line-height: 36px;
+    font-family: var(--f400);
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.img-wrapper p {
+    font-family: var(--f400);
+    font: 14px;
+    color: var(--text-dark);
+    line-height: 24px;
+    text-align: center;
+}
+
+.img-wrapper h3 {
+    font-family: var(--f700);
+    font-size: 14px;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 28px 0 19px;
+}
+
+/* ======================================================================= MAIN end====================================================================================*/
+
+
+
+/* ======================================================================= Footer start====================================================================================*/
+
+
+footer {
+    background: #060503;
+    padding: 30px 0 55px;
+    width: 100%;
+}
+
+
+footer .left p {
+    font-family: var(--f700);
+    font-size: 24px;
+    color: var(--text-light);
+}
+
+footer .right p {
+    font-family: var(--f400);
+    font-size: 24px;
+    color: var(--text-light);
+    margin-right: 50px;
+
+}
+
+footer .right a {
+    font-family: var(--f400);
+    font-size: 16px;
+    background-color: var(--color);
+    padding: 18px 27px 20px 27px;
+    border-radius: 25px;
+    color: var(--text-light);
+    display: inline-block;
+}
+
+footer .bottem p {
+    margin-top: 3%;
+    font-family: var(--f100);
+    font-size: 16px;
+    color: var(--text-light);
+
+}
+
+@media(max-width:1250px) {
+    .flex-wrap-md {
+        flex-wrap: wrap;
+    }
+
+    .flex-colum-md {
+        flex-direction: column;
+    }
+
+    .align-items-center-md {
+        align-items: center;
+    }
+
+
+    .d-flex-md {
+        display: flex;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+
+    .bootem {
+        justify-content: center;
+    }
+
+    .main h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-md-8 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md {
+        width: 36%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .many {
+        margin-bottom: 50px;
+    }
+
+    .img-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:700px) {
+    .col-md {
+        width: 55%;
+    }
+
+    .img-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(max-width:680px) {
+    .header-cont {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .d-flex {
+        flex-direction: column;
+    }
+
+    nav .d-flex p {
+        margin-bottom: 30px;
+    }
+
+    nav .d-flex ul li a {
+        margin: 0;
+    }
+
+    nav .logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:600px) {
+    .footer-cont {
+        flex-direction: column;
+    }
+}
+
+
+
+    
